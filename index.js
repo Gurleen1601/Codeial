@@ -3,6 +3,9 @@ const app=express();
 const port=8000;
 const expresLayouts=require('express-ejs-layouts');
 
+// using static files
+app.use(express.static('./assets'));
+
 // using express layouts
 app.use(expresLayouts);
 
