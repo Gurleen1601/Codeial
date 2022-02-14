@@ -4,6 +4,9 @@ const app=express();
 const port=8000;
 const expressLayouts=require('express-ejs-layouts');
 const db=require('./config/mongoose');
+const session=require('express-session');
+const passport=require('passport');
+const LocalStrategy=require('passport-local');
 
 app.use(express.urlencoded());
 
