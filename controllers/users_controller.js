@@ -65,7 +65,6 @@ module.exports.create=function(req,res){
 
 // sign in and create a session for the user 
 module.exports.createSession=function(req,res){
-    
     // steps to authenticate 
     // find the user
     User.findOne({
@@ -90,6 +89,7 @@ module.exports.createSession=function(req,res){
      }
 
     });
+    
 }
 // remove cookies when the user has signed out
 module.exports.signOut=function(req,res){
