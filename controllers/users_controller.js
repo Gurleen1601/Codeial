@@ -68,8 +68,3 @@ module.exports.createSession=function(req,res){
     return res.redirect('/');
    
 }
-// remove cookies when the user has signed out
-module.exports.signOut=function(req,res){
-     res.clearCookie('user_id');
-     return res.redirect('/users/sign-in');
-}
