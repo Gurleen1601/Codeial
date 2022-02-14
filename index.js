@@ -10,7 +10,7 @@ const LocalStrategy=require('passport-local');
 
 app.use(express.urlencoded());
 
- app.use(cookieParser());
+ app.use(cookieParser());  
 
 // using static files
 app.use(express.static('./assets'));
