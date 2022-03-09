@@ -2,7 +2,7 @@ const nodemailer=require('nodemailer');
 const ejs=require('ejs');
 const path=require('path');
 
-// transporter is an object which will be assigned to the nodemailer
+// transporter(the person who sends the mails) is an object which will be assigned to the nodemailer
 let transporter=nodemailer.createTransport({
     service:'gmail',
     host:'smtp.gmail.com',
@@ -10,7 +10,7 @@ let transporter=nodemailer.createTransport({
     secure:false,
     auth:{
         user:'gurleenkaur455@gmail.com',
-        password:'I1LUV2MY3family4'
+        password:'12345'
     }
 });
 

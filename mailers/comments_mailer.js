@@ -1,0 +1,1 @@
+const mailer=require('../config/nodemailer');
