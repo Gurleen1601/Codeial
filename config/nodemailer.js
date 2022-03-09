@@ -9,8 +9,8 @@ let transporter=nodemailer.createTransport({
     port:587,
     secure:false,
     auth:{
-        user:'gurleenkaur455@gmail.com',
-        password:'12345'
+        user:'gurleen0790.cse19@chitkara.edu.in',
+        pass:'*******'
     }
 });
 
@@ -18,7 +18,7 @@ let transporter=nodemailer.createTransport({
 let renderTemplate=(data,relativPath) => {
     let mailHTML;
     ejs.renderFile(
-           path.join(__dirname,'../views/mailers',relativPath),
+           path.join(__dirname,'../views/mailers',relativePath),
            data,
            function(err,template){
                if(err){
